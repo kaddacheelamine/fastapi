@@ -12,7 +12,7 @@ class Medicine(BaseModel):
 
 class PrescriptionData(BaseModel):
     patientName: str
-    patientAge: int
+    patientAge: str
     patientDescription: str
     currentDate: str
     medicines: List[Medicine]
