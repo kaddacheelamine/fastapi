@@ -13,6 +13,5 @@ app.add_middleware(
 
 @app.post("/store")
 async def store_text(content: str):
-    with open("data.txt", "a", encoding="utf-8") as file:
-        file.write(content + "\n")
+    print(content)
     return {"message": "Text stored successfully"}
