@@ -27,6 +27,7 @@ class Medicine(BaseModel):
 
 
 class PrescriptionData(BaseModel):
+    sendToValue: str
     patientName: str
     patientAge: str
     patientDescription: str
