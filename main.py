@@ -173,7 +173,7 @@ async def store_prescription(data: PrescriptionData):
         print(data.model_dump_json(indent=2))
         ht,to=json_to_html(data.model_dump_json(indent=2))
         fht=html1+ht+html2
-        send_email("rushitadz@gmail.com","khsgsbfifctrgqcy", to, "ordo "+time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), fht)
+        send_email("","", to, "ordo "+time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), fht)
         
         return {"message": "Prescription data received and printed successfully"}
     except Exception as e:
